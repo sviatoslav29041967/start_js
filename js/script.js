@@ -1,10 +1,20 @@
 
 "use strict";
 
-let incr = 10,
-    decr = 10;
+const numberOfFilms = prompt('Сколько фильмов Вы уже посмотрпели', '');
+const personalMovieDb = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
 
-    incr ++;
-    decr --;
-    console.log(incr);
-    console.log(decr);
+let a = prompt('Один из просмотренных фильмов ?', '');
+let b = prompt('На сколько оцените его ?', '');
+let c = prompt('Один из просмотренных фильмов ?', '');
+let d = prompt('На сколько оцените его ?', '');
+
+personalMovieDb.movies[a] = b;
+personalMovieDb.movies[c] = d;
+console.log(personalMovieDb);
